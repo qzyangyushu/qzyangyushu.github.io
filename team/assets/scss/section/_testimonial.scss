@@ -1,0 +1,158 @@
+/* 04. testimonial css here */
+.testimonial_slider {
+    @media #{$large-mobile}{
+        max-width: 576px;
+        margin: 0 auto;
+    }
+    & .author_img{
+        & img{
+            width: inherit;
+        }
+    }
+    & > button{
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translatey(-50%);
+        border: 0;
+        color: #272727;
+        background: none;
+        padding: 0;
+        font-size: 60px;
+        transition: .3s;
+        z-index: 9;
+        &:hover{
+           color: $secondary_color;
+        }
+        &.next_arrow {
+           right: 0;
+            left: auto;
+        }
+        @media #{$tablet-device}{
+            font-size: 50px;
+        }
+        @media #{$large-mobile}{
+            font-size: 30px;
+        }
+    }
+}
+
+
+.single_testimonial {
+	text-align: center;
+}
+
+.testimonial_icon_img{
+    margin-bottom: 24px;
+    & img{
+        margin: 0 auto;
+    }
+}
+
+.testimonial_thumb{
+    margin: 24px 0;
+    @media #{$large-mobile}{
+        margin: 20px 0;
+    }
+    & img{
+        margin: 0 auto;
+    }
+}
+
+.testimonial_area {
+	background: #f6f9fd;
+    padding: 100px 0 130px;
+    margin-bottom: 118px;
+    @media #{$tablet-device}{
+        padding: 100px 0 95px;
+        margin-bottom: 97px;
+    }
+    @media #{$large-mobile}{
+       padding: 78px 0 77px;
+        margin-bottom: 72px;
+    }
+}
+
+.testimonial_desc{
+    & p{
+         color: #272727;
+        font-family: $merriweather;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 46px;
+        padding: 0 218px;
+        @media #{$laptop-device}{
+            line-height: 44px;
+            padding: 0 170px;
+        }
+        @media #{$desktop-device}{
+            font-size: 18px;
+            line-height: 40px;
+            padding: 0 100px;
+        }
+        @media #{$tablet-device}{
+            font-size: 16px;
+            line-height: 33px;
+            padding: 0 40px;
+        }
+        @media #{$large-mobile}{
+            font-size: 14px;
+            line-height: 32px;
+            padding: 0 15px;
+        }
+    }
+}
+
+.testimonial_aothur{
+    & span{
+        color: #272727;
+        font-family: $merriweather;
+        font-size: 18px;
+        font-style: italic;
+        font-weight: 400;
+        line-height: 25px;
+        text-align: center;
+        display: inline-block;
+        @media #{$large-mobile}{
+            font-size: 15px;
+            line-height: 20px;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
