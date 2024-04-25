@@ -1,0 +1,87 @@
+
+
+<!--<!DOCTYPE html>-->
+<!--<html>-->
+<!--<head>-->
+<!--    <title>Excel to JavaScript Dictionary</title>-->
+<!--    <script src="https://unpkg.com/xlsx/dist/xlsx.full.min.js"></script>-->
+<!--    <script>-->
+<!--        function handleFile() {-->
+<!--            var filePath = '../data/academic.xlsx';-->
+
+<!--            fetch(filePath)-->
+<!--                .then(function(response) {-->
+<!--                    if (!response.ok) {-->
+<!--                        throw new Error('Failed to fetch the file');-->
+<!--                    }-->
+<!--                    return response.arrayBuffer();-->
+<!--                })-->
+<!--                .then(function(data) {-->
+<!--                    var workbook = XLSX.read(new Uint8Array(data), { type: 'array' });-->
+<!--                    var worksheet = workbook.Sheets[workbook.SheetNames[0]];-->
+<!--                    var jsonData = XLSX.utils.sheet_to_json(worksheet, { header: 1 });-->
+
+<!--                    var dict = {};-->
+
+<!--                    for (var i = 1; i < jsonData.length; i++) {-->
+<!--                        var key = jsonData[i][0];-->
+<!--                        var value = jsonData[i][1];-->
+<!--                        dict[key] = value;-->
+<!--                    }-->
+
+<!--                    console.log(dict);-->
+<!--                })-->
+<!--                .catch(function(error) {-->
+<!--                    console.error('Error:', error);-->
+<!--                });-->
+<!--        }-->
+<!--        // 在页面加载完成后自动调用handleFile函数-->
+<!--        document.addEventListener('DOMContentLoaded', handleFile);-->
+<!--    </script>-->
+<!--</head>-->
+<!--<body>-->
+<!--</body>-->
+<!--</html>-->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Excel to JavaScript Dictionary</title>
+    <script src="https://unpkg.com/xlsx/dist/xlsx.full.min.js"></script>
+    <script>
+        function handleFile() {
+            var filePath = '../data/academic.xlsx';
+
+            fetch(filePath)
+                .then(function(response) {
+                    if (!response.ok) {
+                        throw new Error('Failed to fetch the file');
+                    }
+                    return response.arrayBuffer();
+                })
+                .then(function(data) {
+                    var workbook = XLSX.read(new Uint8Array(data), { type: 'array' });
+                    var worksheet = workbook.Sheets[workbook.SheetNames[0]];
+                    var jsonData = XLSX.utils.sheet_to_json(worksheet, { header: 1 });
+
+                    var dict = {};
+
+                    for (var i = 1; i < jsonData.length; i++) {
+                        var key = jsonData[i][0];
+                        var value = jsonData[i][1];
+                        dict[key] = value;
+                    }
+
+                    console.log(dict);
+                })
+                .catch(function(error) {
+                    console.error('Error:', error);
+                });
+        }
+    </script>
+</head>
+<body>
+<button onclick="handleFile()">Convert Excel to JavaScript Dictionary</button>
+</body>
+</html>

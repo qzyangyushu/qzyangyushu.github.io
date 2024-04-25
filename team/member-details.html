@@ -1,0 +1,464 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>智能物流配送网络优化团队</title>
+    <meta name="description"
+          content="集成了物流系统仿真、运输与配送优化、大数据应用等功能于一体系统，建立了成果转化与推广应用网络"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="index, follow"/>
+    <link rel="canonical" href="http://jgxy.cqjtu.edu.cn/info/1204/5145.htm"/>
+
+    <!-- CSS
+   ========================= -->
+    <!--bootstrap min css-->
+    <link rel="stylesheet" href="assets/css/vendor/bootstrap.min.css">
+    <!--slick min css-->
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <!--font awesome css-->
+    <link rel="stylesheet" href="assets/css/font.awesome.css">
+    <!--ionicons min css-->
+    <link rel="stylesheet" href="assets/css/ionicons.min.css">
+    <!--animate css-->
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <!--magnific popup css-->
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+    <!--nice select css-->
+    <link rel="stylesheet" href="assets/css/nice-select.css">
+
+    <!-- Main Style CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!--modernizr min js here-->
+    <script src="assets/js/vendor/modernizr-3.7.1.min.js"></script>
+
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/xlsx.full.min.js"></script>
+    <!--    -->
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/read_data.js"></script>
+
+</head>
+
+<body>
+
+
+<!--offcanvas menu area start-->
+<div class="off_canvars_overlay">
+
+</div>
+<div class="offcanvas_menu">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="offcanvas_menu_wrapper">
+                    <div class="canvas_close">
+                        <a href="javascript:void(0)"><i class="ion-ios-close-empty"></i></a>
+                    </div>
+                    <div id="menu" class="text-left ">
+                        <ul class="offcanvas_main_menu">
+                            <li><a href="index.html">主页</a> </li>
+                            <li class="menu-item-has-children">
+                                <a href="about.html">团队概况</a>
+                                <ul class="sub-menu">
+                                    <li><a href="about.html">关于我们</a></li>
+                                    <li><a href="members.html">团员简介</a></li>
+                                    <li><a href="help-center.html">学术中心</a></li>
+                                    <li><a href="contact.html">联系我们</a></li>
+                                </ul>
+                            </li>
+                            <li class="menu-item-has-children">
+                                <a href="#">团队简报</a>
+                                <ul class="sub-menu">
+                                    <li><a href="portfolio.html">团队简报</a></li>
+<!--                                    <li><a href="portfolio-details.html">团队具体简报</a></li>-->
+                                </ul>
+                            </li>
+                            <li class="menu-item-has-children">
+                                <a href="#">成果展示</a>
+                                <ul class="sub-menu">
+                                    <li><a href="market.html" target="_blank">专业市场</a></li>
+                                    <li><a href="http://ilnlab.cqjtu.edu.cn/indexjiaotongyongdu.html" target="_blank">交通拥堵</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="contact.html"> 联系我们</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--offcanvas menu area end-->
+
+<!--header area start-->
+<header class="header_area header_other sticky-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="header_container d-flex align-items-center">
+                    <div class="canvas_open">
+                        <a href="javascript:void(0)"><i class="ion-navicon"></i></a>
+                    </div>
+                    <div class="header_logo">
+                        <a href="index.html"><img src="assets/img/logo/logo3.png" alt=""></a>
+                    </div>
+                    <div class="header_right_info">
+                        <!--main menu start-->
+                        <div class="main_menu menu_color2">
+                            <nav>
+                                <ul>
+                                    <li><a href="index.html">主页</a> </li>
+                                    <li><a class="active" href="about.html">团队概况</a>
+                                        <ul class="sub_menu">
+                                            <li><a href="about.html">关于我们</a></li>
+                                            <li><a href="members.html">团员简介</a></li>
+                                            <li><a href="help-center.html">学术中心</a></li>
+                                            <li><a href="contact.html">联系我们</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="portfolio.html"> 团队简报</a>
+                                        <ul class="sub_menu">
+                                            <li><a href="portfolio.html">团队简报</a></li>
+<!--                                            <li><a href="portfolio-details.html">团队具体简报</a></li>-->
+                                        </ul>
+                                    </li>
+                                    <li><a href="blog.html"> 成果展示 </a>
+                                        <ul class="sub_menu">
+                                            <li><a href="market.html" target="_blank">专业市场</a></li>
+                                            <li><a href="http://ilnlab.cqjtu.edu.cn/indexjiaotongyongdu.html" target="_blank">交通拥堵</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="contact.html"> 联系我们</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <!--main menu end-->
+                        <div class="header_sidebar_menu">
+                            <a href="javascript:void(0)"><img src="assets/img/icon/menu-icon.png" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="overlay__content">
+    <div class="about_close_icon">
+        <a href="javascript:void(0)"><i class="ion-ios-close-empty"></i></a>
+    </div>
+    <div class="overlay__content__inner">
+        <div class="about_overlay_content">
+            <h3>关于我们</h3>
+            <p>
+                我们团队是集成电商物流优化、城市配送系统、智能物流技术一体化的强大团体，在以上领域开展教学和研究工作，并取得了一定的成果和影响。我们旨在提高电商物流与城市配送的效率、可靠性和可持续性，为相关领域的发展和实践提供理论和方法支持。
+            </p>
+            <a href="#">contact@domain.com</a>
+        </div>
+        <div class="overlay_phone_number">
+            <p class="phone">(+00) 123 567990</p>
+        </div>
+        <div class="about_overlay_social">
+            <ul>
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fa fa-youtube-play"></i></a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!--header area end-->
+
+
+<!--breadcrumbs area start-->
+<div class="breadcrumbs_area">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="breadcrumbs_content">
+                    <h3>V7 Digital Photo Printing</h3>
+                    <p>Donec eu pharetra nunc orbi efficitur leo sit</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--breadcrumbs area end-->
+
+<!--blog details area start-->
+<div class="blog_details">
+    <div class="view_all_post">
+        <a class="btn btn_primary" href="blog.html">View All Post</a>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="blog_details_container ">
+                    <div class="blog_thumb_wrapper slick_slider_activation" data-slick='{
+                            "slidesToShow": 1,
+                            "slidesToScroll": 1,
+                            "arrows": true,
+                            "dots": false,
+                            "autoplay": false,
+                            "speed": 300,
+                            "infinite": true
+                        }'>
+                        <div class="blogd_d_thumb">
+                            <img src="assets/img/blog/blog-details.png" alt="">
+                        </div>
+                        <div class="blogd_d_thumb">
+                            <img src="assets/img/blog/blog-details.png" alt="">
+                        </div>
+                    </div>
+                    <div class="blog_d_content">
+                        <div class="blog_d_content_list top">
+                            <span>Design, Social, Business</span>
+                            <h3>5 Tips For Offshore Software Development</h3>
+                            <div class="blog_d_meta">
+                                <ul>
+                                    <li><i class="fa fa-clock-o" aria-hidden="true"></i> 24 Apr 2019, 45 mins ago</li>
+                                    <li><i class="fa fa-user" aria-hidden="true"></i> by John Snow</li>
+                                </ul>
+                            </div>
+                            <p>Sed varius eget felis sed egestas. Nunc a vestibulum mi. Duis non metus maximus ex convallis sagittis. Cras ac sapien ante. Curabitur aliquam porttitor porta. Nullam vel massa mauris. Nam quam sapien, dapibus</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor</p>
+                            <p>
+                                in repr cotls ehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborumNunc a dapibus massa. Suspendisse hendrerit pretium diam, quis commodo turpis. Proin pellentesque massa nec commodo viverra. Phasellus egestas, tellus non</p>
+                        </div>
+                        <div class="blog_d_content_list bottom">
+                            <h3>Upgrading To Microsoft Windows Vista Tips</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor</p>
+                            <p>
+                                in repr cotls ehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit animVivamus non metus turpis. Nunc placerat eros a eleifend bibendum. Integer luctus enim velit, pharetra sodales lorem elementum vitae. Maecenas quis auctor nulla. Sed condimentum vehicula luctus. Quisque tellus sem, fringilla quis eros sit amet, laoreet imperdiet felis. Nam vulputate vitae felis ut egestas. Nulla id ipsum ultricies, sollicitudin est eget, sodales sapien. Donec in dui sit amet ante accumsan luctus et in mauris. Nunc at sapien rhoncus, varius nisl quis, malesuada diam. Integer feugiat urna non massa interdum, non accumsan ligula pulvinar. Vestibulum eget diam eget felis tincidunt tempor id non diam.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in repr cotls ehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non</p>
+                        </div>
+                    </div>
+                    <div class="blog_tags_social">
+                        <div class="blog_tags">
+                            <span>Tags</span>
+                            <ul>
+                                <li><a href="">architecture</a></li>
+                                <li><a href="">minimalist</a></li>
+                                <li><a href="">life style</a></li>
+                            </ul>
+                        </div>
+                        <div class="blog_social">
+                            <span>Share</span>
+                            <ul>
+                                <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="blog_d_post">
+                        <div class="single_blog_post left">
+                            <div class="blog_post_inner">
+                                <div class="blog_post_thumb">
+                                    <img src="assets/img/blog/blod-d-post1.png" alt="">
+                                </div>
+                                <div class="blog_post_text">
+                                    <h3><a href="#">How To Put Movies On Iphone</a></h3>
+                                    <span>24 Apr 2019, 45 mins ago</span>
+                                </div>
+                            </div>
+                            <div class="nav_post">
+                                <a href="#">Previous Post</a>
+                            </div>
+                        </div>
+                        <div class="single_blog_post right">
+                            <div class="blog_post_inner reverse">
+                                <div class="blog_post_thumb">
+                                    <img src="assets/img/blog/blod-d-post2.png" alt="">
+                                </div>
+                                <div class="blog_post_text">
+                                    <h3><a href="#">How Does An Lcd Screen Work</a></h3>
+                                    <span>24 Apr 2019, 45 mins ago</span>
+                                </div>
+                            </div>
+                            <div class="nav_post">
+                                <a href="#">Next Post</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blog_post_comments">
+                        <div class="post_comments_title">
+                            <h3>02 Comments</h3>
+                        </div>
+                        <div class="post_comments_container">
+                            <div class="post_comments_thumb">
+                                <img src="assets/img/blog/comments1.png" alt="">
+                            </div>
+                            <div class="post_comments_text">
+                                <div class="comments_text_header">
+                                    <h3>Mollie Terry</h3>
+                                    <span>24 Apr 2019, 45 mins ago</span>
+                                </div>
+                                <p>“Gave 5 stars for excellent customer service. I had a couple of questions which they replied quickly to answer. If I could give multiple reasons for my rating it would also be for the design quality and customization to go along with the great service. The theme is</p>
+                                <a href="#">Reply</a>
+                            </div>
+                        </div>
+                        <div class="post_comments_container">
+                            <div class="post_comments_thumb">
+                                <img src="assets/img/blog/comments2.png" alt="">
+                            </div>
+                            <div class="post_comments_text">
+                                <div class="comments_text_header">
+                                    <h3>Mollie Terry</h3>
+                                    <span>24 Apr 2019, 45 mins ago</span>
+                                </div>
+                                <p>“Gave 5 stars for excellent customer service. I had a couple of questions which they replied quickly to answer. If I could give multiple reasons for my rating it would also be for the design quality and customization to go along with the great service. The theme is</p>
+                                <a href="#">Reply</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blog_post_form">
+                        <div class="post_form_title">
+                            <h3>Leave a Reply</h3>
+                        </div>
+                        <div class="post_form">
+                            <form action="#">
+                                <div class="row">
+                                    <div class="col-lg-4 col-md-4 col-sm-6">
+                                        <input placeholder="Name *" type="text">
+                                    </div>
+                                    <div class="col-lg-4 col-md-4 col-sm-6">
+                                        <input placeholder="Email  *" type="text">
+                                    </div>
+                                    <div class="col-lg-4 col-md-4 col-sm-6">
+                                        <input placeholder="Website" type="text">
+                                    </div>
+                                </div>
+                                <textarea placeholder="Your Comment"></textarea>
+                                <button class="btn btn_primary" type="submit">Send message</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--blog details area end-->
+
+
+<!--footer area start-->
+<div class="footer_widgets">
+    <div class="container">
+        <div class="footer_top">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="footer_widgets_left">
+                        <div class="footer_logo">
+                            <a href="#"><img src="assets/img/logo/logo2.png" alt=""></a>
+                        </div>
+                        <div class="footer_desc">
+                            <p>明德行远，交通天下</p>
+                        </div>
+                        <div class="footer_social">
+                            <ul>
+                                <li><a href="#"><i class="fa fa-facebook"
+                                                   aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter"
+                                                   aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fa fa-linkedin-square"
+                                                   aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fa fa-vimeo" aria-hidden="true"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <div class="footer_widgets_right">
+                        <div class="footer_widgets_list">
+                            <h3>了解</h3>
+                            <ul>
+                                <li><a href="about.html">关于我们</a></li>
+                                <li><a href="contact.html">联系我们</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer_widgets_list">
+                            <h3>团队</h3>
+                            <ul>
+                                <li><a href="members.html">团员简介</a></li>
+                                <li><a href="portfolio.html">团队简报</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer_widgets_list">
+                            <h3>成果</h3>
+                            <ul>
+                                <li><a href="help-center.html">学术成果</a></li>
+                                <li><a href="blog.html">成果展示</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer_widgets_list instagram">
+                            <h3>团队公众号</h3>
+                            <div class="instagram_thumb_area">
+                                <div class="instagram_thumb">
+                                    <a href="#"><img src="assets/img/public/Public.png" alt=""></a>
+                                </div>
+                            </div>
+                            <div class="footer_email">
+                                <h3><i class="fa fa-envelope-o" aria-hidden="true"></i>明德远行</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright_right">
+            <div class="row">
+                <div class="col-12">
+                    <p>版权 &copy; 智能物流网络优化团队<a target="_blank" href="#" title=""></a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--footer area end-->
+
+
+<!-- JS
+============================================ -->
+
+<!--jquery min js-->
+<script src="assets/js/vendor/jquery-3.4.1.min.js"></script>
+<!--popper min js-->
+<script src="assets/js/vendor/popper.js"></script>
+<!--bootstrap min js-->
+<script src="assets/js/vendor/bootstrap.min.js"></script>
+<!--slick min js-->
+<script src="assets/js/slick.min.js"></script>
+<!--wow min js-->
+<script src="assets/js/wow.min.js"></script>
+<!--jquery scrollup min js-->
+<script src="assets/js/jquery.scrollup.min.js"></script>
+<!--images loaded min js-->
+<script src="assets/js/images-loaded.min.js"></script>
+<!--isotope pkgd min js-->
+<script src="assets/js/isotope.pkgd.min.js"></script>
+<!--jquery magnific popup min js-->
+<script src="assets/js/jquery.magnific-popup.min.js"></script>
+<!--jquery nice select js-->
+<script src="assets/js/jquery.nice-select.js"></script>
+<!--jquery counterup min js-->
+<script src="assets/js/jquery.counterup.min.js"></script>
+<!--jquery waypoints js-->
+<script src="assets/js/jquery-waypoints.js"></script>
+<!--jarallax min js-->
+<script src="assets/js/jarallax.min.js"></script>
+
+<!-- Main JS -->
+<script src="assets/js/main.js"></script>
+
+
+
+</body>
+
+</html>
+

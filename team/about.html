@@ -1,0 +1,711 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>智能物流配送网络优化团队</title>
+    <meta name="description"
+          content="集成了物流系统仿真、运输与配送优化、大数据应用等功能于一体系统，建立了成果转化与推广应用网络"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="index, follow"/>
+    <link rel="canonical" href="http://jgxy.cqjtu.edu.cn/info/1204/5145.htm"/>
+
+    <!-- CSS
+   ========================= -->
+    <!--bootstrap min css-->
+    <link rel="stylesheet" href="assets/css/vendor/bootstrap.min.css">
+    <!--slick min css-->
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <!--font awesome css-->
+    <link rel="stylesheet" href="assets/css/font.awesome.css">
+    <!--ionicons min css-->
+    <link rel="stylesheet" href="assets/css/ionicons.min.css">
+    <!--animate css-->
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <!--magnific popup css-->
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+    <!--nice select css-->
+    <link rel="stylesheet" href="assets/css/nice-select.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.5/xlsx.full.min.js"></script>
+    <!--    -->
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/read_data.js"></script>
+
+    <!-- Main Style CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!--modernizr min js here-->
+    <script src="assets/js/vendor/modernizr-3.7.1.min.js"></script>
+
+
+</head>
+
+<body>
+
+
+<!--offcanvas menu area start-->
+<div class="off_canvars_overlay">
+
+</div>
+<div class="offcanvas_menu">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="offcanvas_menu_wrapper">
+                    <div class="canvas_close">
+                        <a href="javascript:void(0)"><i class="ion-ios-close-empty"></i></a>
+                    </div>
+                    <div id="menu" class="text-left ">
+                        <ul class="offcanvas_main_menu">
+                            <li><a href="index.html">主页</a></li>
+                            <li class="menu-item-has-children">
+                                <a href="about.html">团队概况</a>
+                                <ul class="sub-menu">
+                                    <li><a href="about.html">关于我们</a></li>
+                                    <li><a href="members.html">团员简介</a></li>
+                                    <li><a href="help-center.html">学术中心</a></li>
+                                    <li><a href="contact.html">联系我们</a></li>
+                                </ul>
+                            </li>
+                            <li class="menu-item-has-children">
+                                <a href="#">团队简报</a>
+                                <ul class="sub-menu">
+                                    <li><a href="portfolio.html">团队简报</a></li>
+                                    <!--                                        <li><a href="portfolio-details.html">团队具体简报</a></li>-->
+                                </ul>
+                            </li>
+                            <li class="menu-item-has-children">
+                                <a href="#">成果展示</a>
+                                <ul class="sub-menu">
+                                    <li><a href="market.html" target="_blank">专业市场</a></li>
+                                    <li><a href="http://ilnlab.cqjtu.edu.cn/indexjiaotongyongdu.html" target="_blank">交通拥堵</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a href="contact.html"> 联系我们</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--offcanvas menu area end-->
+
+<!--header area start-->
+<header class="header_area header_other sticky-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="header_container d-flex align-items-center">
+                    <div class="canvas_open">
+                        <a href="javascript:void(0)"><i class="ion-navicon"></i></a>
+                    </div>
+                    <div class="header_logo">
+                        <a href="index.html"><img src="assets/img/logo/logo3.png" alt=""></a>
+                    </div>
+                    <div class="header_right_info">
+                        <!--main menu start-->
+                        <div class="main_menu menu_color2">
+                            <nav>
+                                <ul>
+                                    <li><a href="index.html">主页</a></li>
+                                    <li><a class="active" href="about.html">团队概况</a>
+                                        <ul class="sub_menu">
+                                            <li><a href="about.html">关于我们</a></li>
+                                            <li><a href="members.html">团员简介</a></li>
+                                            <li><a href="help-center.html">学术中心</a></li>
+                                            <li><a href="contact.html">联系我们</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="portfolio.html"> 团队简报</a>
+                                        <ul class="sub_menu">
+                                            <li><a href="portfolio.html">团队简报</a></li>
+                                            <!--                                                <li><a href="portfolio-details.html">团队具体简报</a></li>-->
+                                        </ul>
+                                    </li>
+                                    <li><a href="blog.html"> 成果展示 </a>
+                                        <ul class="sub_menu">
+                                            <li><a href="market.html" target="_blank">专业市场</a></li>
+                                            <li><a href="http://ilnlab.cqjtu.edu.cn/indexjiaotongyongdu.html"
+                                                   target="_blank">交通拥堵</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="contact.html"> 联系我们</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <!--main menu end-->
+                        <div class="header_sidebar_menu">
+                            <a href="javascript:void(0)"><img src="assets/img/icon/menu-icon.png" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="overlay__content">
+    <div class="about_close_icon">
+        <a href="javascript:void(0)"><i class="ion-ios-close-empty"></i></a>
+    </div>
+    <div class="overlay__content__inner">
+        <div class="about_overlay_content">
+            <h3>关于我们</h3>
+            <p>
+                我们团队是集成电商物流优化、城市配送系统、智能物流技术一体化的强大团体，在以上领域开展教学和研究工作，并取得了一定的成果和影响。我们旨在提高电商物流与城市配送的效率、可靠性和可持续性，为相关领域的发展和实践提供理论和方法支持。
+            </p>
+            <a href="#">contact@domain.com</a>
+        </div>
+        <div class="overlay_phone_number">
+            <p class="phone">(+00) 123 567990</p>
+        </div>
+        <div class="about_overlay_social">
+            <ul>
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fa fa-youtube-play"></i></a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!--header area end-->
+
+<!--breadcrumbs area start-->
+<div class="breadcrumbs_area">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="breadcrumbs_content">
+                    <h3>团队方向</h3>
+                    <p style="position: center">
+                        大规模配送网络智能优化：以卷烟医药等为背景，研究专供物流网的智能络优化问题
+                    </p>
+                    <p>
+                        大数据驱动的智能城市配送：以大城市配送为背景，研究大数据驱动的智能快配快递物流网络优化问题
+                    </p>
+                    <p>
+                        智能供应链网络与仓储配送一体化：以制造企业为背景，研究智能供应链服务网络优化与仓储配送一体化问题
+                    </p>
+                    <p>
+                        集成物流网络智能优化：以开放经济为背景，研究涉外物流服务的集成物流网络优化问题
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--breadcrumbs area end-->
+
+<!--start forever area start-->
+<div class="start_forever_area about_forever">
+    <div class="container-fluid p-0">
+        <div class="row no-gutters align-items-center">
+            <div class="col-lg-6 col-md-12">
+                <div class="start_forever_thumb wow fadeInUp" data-wow-delay="0.1s" data-wow-duration="1.1s">
+                    <img src="assets/img/bg/banner5.png" alt="">
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-12">
+                <div class="start_forever_content">
+                    <!--                        <h4 class="wow fadeInUp" data-wow-delay="0.1s" data-wow-duration="1.1s">我们是谁？</h4>-->
+                    <h3 class="wow fadeInUp" data-wow-delay="0.2s" data-wow-duration="1.2s">团队文化</h3>
+                    <p class="wow fadeInUp" data-wow-delay="0.3s" data-wow-duration="1.3s">
+                        我们团队秉持团结互助、共建共享的团队精神，鼓励团队成员合作，促进知识共享和团队合作，共同强化、建设良好的团队
+                    </p>
+                    <div class="forever_text_list">
+                        <ul>
+                            <li class="wow fadeInUp" data-wow-delay="0.1s" data-wow-duration="1.1s"><span><img
+                                    src="assets/img/icon/mark.png" alt=""></span>
+                                团结互助
+                            </li>
+                            <li class="wow fadeInUp" data-wow-delay="0.2s" data-wow-duration="1.2s"><span><img
+                                    src="assets/img/icon/mark.png" alt=""></span>
+                                严谨求实
+                            </li>
+                            <li class="wow fadeInUp" data-wow-delay="0.3s" data-wow-duration="1.3s"><span><img
+                                    src="assets/img/icon/mark.png" alt=""></span>
+                                勇于革新
+                            </li>
+                        </ul>
+                    </div>
+                    <!--                        <a class="btn btn_primary wow fadeInUp" data-wow-delay="0.3s" data-wow-duration="1.3s" href="#">Started now</a>-->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--start forever area end-->
+
+
+<!--potential area start-->
+<div class="potential_area">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="section_title">
+                    <h2>团队技能</h2>
+                    <p>
+                        集成仿真、算法、可视化于一体化团队系统
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="potential_container">
+            <div class="row align-items-center">
+                <div class="col-lg-3 col-md-6">
+                    <div class="single_potential wow fadeInUp" data-wow-delay="0.1s" data-wow-duration="1.1s">
+                        <div class="potential_thumb">
+                            <img src="assets/img/others/potential1.png" alt="">
+                        </div>
+                        <div class="potential_content">
+                            <h3>仿真</h3>
+                            <p>
+                                Anylogic、Flexim、Simulink
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="single_potential wow fadeInUp" data-wow-delay="0.2s" data-wow-duration="1.2s">
+                        <div class="potential_thumb">
+                            <img src="assets/img/others/potential2.png" alt="">
+                        </div>
+                        <div class="potential_content">
+                            <h3>算法</h3>
+                            <p>
+                                启发式算法、精确算法
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="single_potential wow fadeInUp" data-wow-delay="0.3s" data-wow-duration="1.3s">
+                        <div class="potential_thumb">
+                            <img src="assets/img/others/potential3.png" alt="">
+                        </div>
+                        <div class="potential_content">
+                            <h3>管理</h3>
+                            <p>
+                                企业化管理
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="single_potential wow fadeInUp" data-wow-delay="0.4s" data-wow-duration="1.4s">
+                        <div class="potential_thumb">
+                            <img src="assets/img/others/potential4.png" alt="">
+                        </div>
+                        <div class="potential_content">
+                            <h3>可视化</h3>
+                            <p>
+                                HTML可视化、水经注、ArcGis
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--potential area end-->
+
+<!--start forever area start-->
+<div class="start_forever_area about_chooseus">
+    <div class="container-fluid p-0">
+        <div class="row no-gutters align-items-center">
+            <div class="col-lg-6">
+                <div class="start_forever_content">
+                    <!--                        <h4 class="wow fadeInUp" data-wow-delay="0.1s" data-wow-duration="1.1s">-->
+                    <!--                            WHY CHOOSE US ?-->
+                    <!--                        </h4>-->
+                    <h3 class="wow fadeInUp" data-wow-delay="0.2s" data-wow-duration="1.2s">
+                        团队发展
+                    </h3>
+                    <div id="accordion" class="about__accordion">
+                        <div class="card card_dipult wow fadeInUp" data-wow-delay="0.1s" data-wow-duration="1.1s">
+                            <div class="card-header card_accor" id="headingOne">
+                                <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne"
+                                        aria-expanded="true" aria-controls="collapseOne">
+                                    创新团队
+                                    <i class="ion-android-add"></i>
+                                    <i class="ion-ios-minus-empty"></i>
+                                </button>
+                            </div>
+                            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                                 data-parent="#accordion">
+                                <div class="card-body">
+                                    <p>
+                                        2013年物流与供应链创新团队
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card  card_dipult wow fadeInUp" data-wow-delay="0.2s" data-wow-duration="1.2s">
+                            <div class="card-header card_accor" id="headingTwo">
+                                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo"
+                                        aria-expanded="false" aria-controls="collapseTwo">
+                                    重点实验室申报与成立
+                                    <i class="ion-android-add"></i>
+                                    <i class="ion-ios-minus-empty"></i>
+
+                                </button>
+                            </div>
+                            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                                 data-parent="#accordion">
+                                <div class="card-body">
+                                    <p>
+                                        2016年智能物流网络重庆市重点实验室申报与成立
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card  card_dipult wow fadeInUp" data-wow-delay="0.3s" data-wow-duration="1.3s">
+                            <div class="card-header card_accor" id="headingThree">
+                                <button class="btn btn-link collapsed" data-toggle="collapse"
+                                        data-target="#collapseThree" aria-expanded="false"
+                                        aria-controls="collapseThree">
+                                    复杂物流系统创新团队
+                                    <i class="ion-android-add"></i>
+                                    <i class="ion-ios-minus-empty"></i>
+                                </button>
+                            </div>
+                            <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                                 data-parent="#accordion">
+                                <div class="card-body">
+                                    <p>
+                                        2017年复杂物流系统创新团队
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card  card_dipult wow fadeInUp" data-wow-delay="0.4s" data-wow-duration="1.4s">
+                            <div class="card-header card_accor" id="headingfour">
+                                <button class="btn btn-link collapsed" data-toggle="collapse"
+                                        data-target="#collapseeight" aria-expanded="false"
+                                        aria-controls="collapseeight">
+                                    智能物流网络优化研究生导师团队
+                                    <i class="ion-android-add"></i>
+                                    <i class="ion-ios-minus-empty"></i>
+                                </button>
+                            </div>
+                            <div id="collapseeight" class="collapse" aria-labelledby="headingfour"
+                                 data-parent="#accordion">
+                                <div class="card-body">
+                                    <p>
+                                        2018年重庆市教委获批智能物流网络优化研究生导师团队
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card  card_dipult wow fadeInUp" data-wow-delay="0.4s" data-wow-duration="1.4s">
+                            <div class="card-header card_accor" id="headingfive">
+                                <button class="btn btn-link collapsed" data-toggle="collapse"
+                                        data-target="#collapsfive" aria-expanded="false"
+                                        aria-controls="collapsfive">
+                                    运筹优化及人工智能联合实验室
+                                    <i class="ion-android-add"></i>
+                                    <i class="ion-ios-minus-empty"></i>
+                                </button>
+                            </div>
+                            <div id="collapsfive" class="collapse" aria-labelledby="headingfive"
+                                 data-parent="#accordion">
+                                <div class="card-body">
+                                    <p>
+                                        2019年运筹优化及人工智能联合实验室
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="start_forever_thumb wow fadeInUp" data-wow-delay="0.1s" data-wow-duration="1.1s">
+                    <img src="assets/img/bg/banner5.png" alt="">
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<!--start forever area end-->
+<!--    团队荣誉-->
+<div class="row">
+    <div class="col-12">
+        <div class="section_title">
+            <h2>团队荣誉</h2>
+        </div>
+    </div>
+</div>
+<div class="portfolio_area">
+    <div class="container-fluid p-0">
+        <div class="portfolio_wrapper">
+            <div class="portfolio_list">
+                <div class="row no-gutters honor">
+
+                </div>
+                <!--                    <button class="but" onclick="showPreviousDivs()">上一组</button>-->
+                <!--                    <button class="but" onclick="showNextDivs()">下一组</button>-->
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="load_more_btn">
+                    <a class="wow fadeInUp" data-wow-delay="0.1s" data-wow-duration="1.1s">
+                        <button style="background: none;border: none" onclick="showNextDivs()">Next</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!--创始人简介-->
+<div class="testimonial_area testimonial_about">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="testimonial_slider slick_slider_activation" data-slick='{
+                        "slidesToShow": 1,
+                        "slidesToScroll": 1,
+                        "arrows": true,
+                        "dots": false,
+                        "autoplay": false,
+                        "speed": 300,
+                        "infinite": true                                                        
+                    }'>
+                    <div class="single_testimonial">
+                        <div class="testimonial_icon_img">
+                            <img src="assets/img/icon/testimonial-icon.png" alt="">
+                        </div>
+                        <div class="testimonial_desc">
+                            <p>
+                                2012.1-今，重庆交通大学管理学院教授、博士生导师，智能物流网络重庆市重点实验室主任，中国物流学会理事，重庆市“口岸物流与航运发展研究中心”研究员，主要从事电子商务物流、城市配送、物流网络优化、智能算法等方面研究与教学。2016年获重庆市教委第七届“中青年”骨干教师称号。
+                            </p>
+                        </div>
+                        <div class="testimonial_thumb">
+                            <a href="#"><img src="assets/img/others/gxl.png" alt=""></a>
+                        </div>
+                        <div class="testimonial_aothur">
+                            <span>团队创始人：葛显龙教授</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--testimonial area end-->
+
+<!--最底块-->
+<div class="footer_widgets">
+    <div class="container">
+        <div class="footer_top">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="footer_widgets_left">
+                        <div class="footer_logo">
+                            <a href="#"><img src="assets/img/logo/logo2.png" alt=""></a>
+                        </div>
+                        <div class="footer_desc">
+                            <p>明德行远，交通天下</p>
+                        </div>
+                        <div class="footer_social">
+                            <ul>
+                                <li><a href="#"><i class="fa fa-facebook"
+                                                   aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter"
+                                                   aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fa fa-linkedin-square"
+                                                   aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fa fa-vimeo" aria-hidden="true"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <div class="footer_widgets_right">
+                        <div class="footer_widgets_list">
+                            <h3>了解</h3>
+                            <ul>
+                                <li><a href="about.html">关于我们</a></li>
+                                <li><a href="contact.html">联系我们</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer_widgets_list">
+                            <h3>团队</h3>
+                            <ul>
+                                <li><a href="members.html">团员简介</a></li>
+                                <li><a href="portfolio.html">团队简报</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer_widgets_list">
+                            <h3>成果</h3>
+                            <ul>
+                                <li><a href="help-center.html">学术成果</a></li>
+                                <li><a href="blog.html">成果展示</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer_widgets_list instagram">
+                            <h3>团队公众号</h3>
+                            <div class="instagram_thumb_area">
+                                <div class="instagram_thumb">
+                                    <a href="#"><img src="assets/img/public/Public.png" alt=""></a>
+                                </div>
+                            </div>
+                            <div class="footer_email">
+                                <h3><i class="fa fa-envelope-o" aria-hidden="true"></i>明德远行</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright_right">
+            <div class="row">
+                <div class="col-12">
+                    <p>版权 &copy; 智能物流网络优化团队<a target="_blank" href="#" title=""></a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--footer area end-->
+
+<script>
+    // 给定的数组内容
+    var urltt = '../data/rongyu.xlsx'; // 您的 Excel 文件路径
+    loadData(urltt, function (dictionary, matrix) {
+        var resultContainers = document.getElementsByClassName('honor');
+        var resultContainer = resultContainers[0];
+        for (var i = 0; i < dictionary.length; i++) {
+            var item = dictionary[i];
+            var html = '<div class="col-lg-3 col-md-6 col-sm-6 rongyu" onMouseOver="stopTimer()" onMouseOut="startTimer()">';
+            html +='<div class="portfolio_thumb">';
+            html +='<a href="#"><img src="assets/img/award/'+item.img_png+'.png" alt=""></a>';
+            html +='<div class="portfolio__text">';
+            html +='<h3>'+item.name+'</h3>';
+            html += '<p>';
+            html +='<br>主题：'+item.theme+'';
+            html +='<br>成员：'+item.members+'';
+            html +='</p>';
+            html +='<div class="portfolio_icone">';
+            html +='<ul>';
+            html +='<li>'
+            html +='<a class="port_popup" href="assets/img/award/'+item.img_png+'.png"><img src="assets/img/icon/search-zoom-in.png" alt=""></a>';
+            html +=' </li>';
+            html +='</ul>';
+            html +='</div>';
+            html +='</div>';
+            html +='</div>';
+            html +='</div>';
+
+            resultContainer.innerHTML += html;
+        }
+    });
+</script>
+<!-- JS
+============================================ -->
+
+<!--jquery min js-->
+<script src="assets/js/vendor/jquery-3.4.1.min.js"></script>
+<!--popper min js-->
+<script src="assets/js/vendor/popper.js"></script>
+<!--bootstrap min js-->
+<script src="assets/js/vendor/bootstrap.min.js"></script>
+<!--slick min js-->
+<script src="assets/js/slick.min.js"></script>
+<!--wow min js-->
+<script src="assets/js/wow.min.js"></script>
+<!--jquery scrollup min js-->
+<script src="assets/js/jquery.scrollup.min.js"></script>
+<!--images loaded min js-->
+<script src="assets/js/images-loaded.min.js"></script>
+<!--isotope pkgd min js-->
+<script src="assets/js/isotope.pkgd.min.js"></script>
+<!--jquery magnific popup min js-->
+<script src="assets/js/jquery.magnific-popup.min.js"></script>
+<!--jquery nice select js-->
+<script src="assets/js/jquery.nice-select.js"></script>
+<!--jquery counterup min js-->
+<script src="assets/js/jquery.counterup.min.js"></script>
+<!--jquery waypoints js-->
+<script src="assets/js/jquery-waypoints.js"></script>
+<!--jarallax min js-->
+<script src="assets/js/jarallax.min.js"></script>
+
+<!-- Minified JS Plugins 
+    *************(Please remove the comment from below vendor.min.js and plugins.min.js  for better website load performance and remove all js plugin files from above) 
+-->
+<!-- <script src="assets/js/vendor/vendor.min.js"></script>
+<script src="assets/js/plugins.min.js"></script> -->
+
+<!-- Main JS -->
+<script src="assets/js/main.js"></script>
+<script>
+    var divs = document.querySelectorAll('.col-lg-3');
+    var currentIndex = 4;
+    var divsPerRow = 4;
+    var intervalDuration = 60000; // 设置定时器间隔时间，单位为毫秒
+    var timerId;
+    document.addEventListener('DOMContentLoaded', function () {
+        showDivs(currentIndex);
+        startTimer();
+    });
+
+    function showDivs(startIndex) {
+        for (var i = 0; i < divs.length; i++) {
+            if (i >= startIndex && i < startIndex + divsPerRow) {
+                divs[i].classList.add('active');
+            } else {
+                divs[i].classList.remove('active');
+            }
+        }
+    }
+
+    function showNextDivs() {
+        currentIndex += divsPerRow;
+        if (currentIndex >= divs.length) {
+            currentIndex = 4;
+        }
+        showDivs(currentIndex);
+        resetTimer();
+    }
+
+    function showPreviousDivs() {
+        currentIndex -= divsPerRow;
+        if (currentIndex < 0) {
+            currentIndex = Math.max(0, divs.length - divsPerRow);
+        }
+        showDivs(currentIndex);
+        resetTimer();
+    }
+
+    function startTimer() {
+        timerId = setInterval(showNextDivs, intervalDuration);
+    }
+
+    function stopTimer() {
+        clearInterval(timerId);
+    }
+
+    function resetTimer() {
+        clearInterval(timerId);
+        startTimer();
+    }
+</script>
+
+
+</body>
+
+</html>
