@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pagination Example</title>
+    <style>
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+<div class="page active">
+    <div id="contentContainer"></div>
+</div>
+
+<button onclick="previousPage()">上一页</button>
+<button onclick="nextPage()">下一页</button>
+
+<script>
+    var dictionaryData = {
+        1: "Content 1",
+        2: "Content 2",
+        3: "Content 3",
+        4: "Content 4",
+        5: "Content 5",
+        6: "Content 6",
+        7: "Content 7",
+        8: "Content 8",
+        9: "Content 9",
+        10: "Content 10"
+    };
+
+    var currentPage = 1;
+    var pageSize = 4;
+    var totalPages = Math.ceil(Object.keys(dictionaryData).length / pageSize);
+    var contentContainer = document.getElementById("contentContainer");
+
+    function showPage(pageNumber) {
+        var startIndex = (pageNumber - 1) * pageSize;
+        var endIndex = startIndex + pageSize;
+
+        var contentHTML = "";
+        for (var i = startIndex + 1; i <= endIndex; i++) {
+            if (dictionaryData[i]) {
+                contentHTML += '<div class="content">' + dictionaryData[i] + '</div>';
+            }
+        }
+        contentContainer.innerHTML = contentHTML;
+    }
+
+    function previousPage() {
+        if (currentPage > 1) {
+            currentPage--;
+        } else {
+            currentPage = totalPages;
+        }
+
+        showPage(currentPage);
+    }
+
+    function nextPage() {
+        if (currentPage < totalPages) {
+            currentPage++;
+        } else {
+            currentPage = 1;
+        }
+
+        showPage(currentPage);
+    }
+
+    showPage(currentPage);
+</script>
+</body>
+</html>
