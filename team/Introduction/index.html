@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>加载后一秒钟只自动刷新一次页面示例</title>
+    <script>
+        function refreshPageOnce() {
+            var hasRefreshed = sessionStorage.getItem('hasRefreshed');
+            if (!hasRefreshed) {
+                setTimeout(function() {
+                    sessionStorage.setItem('hasRefreshed', 'true');
+                    location.reload();
+                }, 1000); // 1000 milliseconds = 1 second
+            } else {
+                sessionStorage.removeItem('hasRefreshed');
+            }
+        }
+    </script>
+</head>
+<body onload="refreshPageOnce()">
+<h1>加载后一秒钟只自动刷新一次页面示例</h1>
+<p>页面将在加载后一秒钟只自动刷新一次。</p>
+</body>
+</html>

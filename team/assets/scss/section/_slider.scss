@@ -1,0 +1,182 @@
+/* 02. slider area css here */
+.slider_section{
+    margin-bottom: 230px;
+    @media #{$desktop-device}{
+        margin-bottom: 150px;
+    }
+    @media #{$tablet-device}{
+      margin-bottom: 100px;
+    }
+    @media #{$large-mobile}{
+        margin-bottom: 80px;
+    }
+}
+
+.single_slider{
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center;
+    background-size: cover; 
+    position: relative;
+    min-height: 1150px;
+    @media #{$laptop-device}{
+        min-height: 1050px;
+    }
+    @media #{$desktop-device}{
+        min-height: 750px;
+    }
+    @media #{$tablet-device}{
+       min-height: 620px;
+    }
+    @media #{$large-mobile}{
+        min-height: 520px;
+    }
+    &::before{
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 100%;
+        background: #000000;
+        top: 0;
+        left: 0;
+        opacity: 0.45;
+    }
+}
+
+.slider_text{
+    text-align: center;
+    padding: 186px 0 140px;
+    @media #{$desktop-device}{
+        padding: 120px 0 110px;
+    }
+    @media #{$tablet-device}{
+       padding: 80px 0 80px;
+    }
+    @media #{$large-mobile}{
+       padding: 30px 0 0;
+    }
+    & h1{
+         color: #ffffff;
+          font-family: $merriweather;
+          font-size: 68px;
+          font-weight: 400;
+          line-height: 85px;
+          text-align: center;
+          letter-spacing: -2px;
+        margin-bottom: 15px;
+        @media #{$desktop-device}{
+            font-size: 50px;
+            line-height: 60px;
+            letter-spacing: 0;
+        }
+        @media #{$tablet-device}{
+            font-size: 40px;
+            line-height: 50px;
+            letter-spacing: 0;
+        }
+        @media #{$large-mobile}{
+            font-size: 25px;
+            line-height: 33px;
+            letter-spacing: 0;
+        }
+    }
+    & p{
+        color: #ffffff;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 36px;
+        margin-bottom: 0;
+        @media #{$tablet-device}{
+            font-size: 22px;
+            line-height: 30px;
+        }
+        @media #{$large-mobile}{
+            font-size: 16px;
+            line-height: 26px;
+        }
+    }
+    & a.btn{
+        
+    }
+}
+
+
+.slider_area{
+    & .slick-dots{
+        position: absolute;
+        bottom: 62px;
+        left: 50%;
+        transform: translatex(-50%);
+        @media #{$large-mobile}{
+            bottom: 30px;
+        }
+        & li{
+            display: inline-block;
+            margin: 0 5px;
+            &.slick-active{
+                & button{
+                    color: #ffffff;
+                    opacity: 1;
+                    &::before{
+                        background: #ffffff;
+                    }
+                }
+            }
+            & button{
+                color: #d8d8d8;
+                font-size: 24px;
+                font-weight: 400;
+                line-height: 36px;
+                border: 0;
+                padding: 0;
+                padding-bottom: 14px;
+                background: inherit;
+                width: 50px;
+                text-align: center;
+                position: relative;
+                opacity: 0.3;
+                &::before{
+                    position: absolute;
+                    content: "";
+                    width: 100%;
+                    height: 5px;
+                     background: #d8d8d8;
+                    bottom: 0;
+                    left: 0;
+                     @media #{$large-mobile}{
+                        height: 3px;
+                    }
+                }
+                 @media #{$large-mobile}{
+                    font-size: 20px;
+                    line-height: 26px;
+                    padding-bottom: 10px;
+                    width: 40px;
+                }
+                
+            }
+        }
+    }
+}
+
+.slick-current .slider_text h1,.slick-current .slider_text a,.slick-current .slider_text p{
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+	-webkit-animation-duration: 1s;
+	animation-duration: 1s;
+    -webkit-animation-name: fadeInUp;
+    animation-name: fadeInUp;
+    -webkit-animation-delay: 0.3s;
+    animation-delay: 0.3s;
+}
+
+.slick-current .slider_text p{
+     -webkit-animation-delay: 0.7s;
+    animation-delay: 0.7s;
+}
+.slick-current .slider_text a{
+     -webkit-animation-delay: 0.9s;
+    animation-delay: 0.9s;
+}
+
+
